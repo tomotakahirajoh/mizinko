@@ -7,7 +7,7 @@ use Illuminate\Http\Response;
 
 class HelloController extends Controller
 {
-    public function index(Request $request, Respose $response) {
+    public function index(Request $request, Response $response) {
     $html = <<<EOF
 <html>
 <head>
@@ -27,7 +27,7 @@ margin:-50px 0px -120px 0px; }
 </body>
 </html>
 EOF;
-        $response->setContent($html);
-        return $response;
+        # $response->setContent($html);
+        return $html;
     }
 }
