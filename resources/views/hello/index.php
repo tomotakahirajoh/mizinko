@@ -9,6 +9,8 @@
 </head>
 <body>
         <h1>Index</h1>
-        <p>This is a sample page with php-tempalte.</p>
+        <p><?php echo $msg; ?></p>
+        <P><?php echo date("Y年n月j日"); ?></p>
+        <p>ID=<?php echo $id; ?></p>
 </body>
 </html>
