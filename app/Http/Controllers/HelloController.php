@@ -24,10 +24,12 @@ margin:-50px 0px -120px 0px; }
     <pre>{$request}</pre>
     <h3>Response</h3>
     <pre>{$response}</pre>
+
 </body>
 </html>
 EOF;
-        # $response->setContent($html);
-        return $html;
+
+        $response->setContent($html);
+        return $response;
     }
 }
